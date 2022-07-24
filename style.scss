@@ -212,6 +212,9 @@ main {
     position: relative;
     color: #fff;
     padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     video {
       position: absolute;
@@ -519,9 +522,44 @@ footer {
   }
 
   main {
+    margin-top: 16rem;
+
+    .hero-image {
+      height: 55vh;
+
+      .hero-container {
+        width: 65%;
+      }
+
+      .title {
+        width: 100%;
+        max-width: 81rem;
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      small {
+        font-size: 1.2rem;
+      }
+
+      .contact-us {
+        max-width: 31rem;
+      }
+    }
+
     .gallery {
       width: 100%;
       padding: 2rem;
+
+      .card {
+        margin-right: 1rem;
+      }
     }
 
     .card-container {
@@ -541,6 +579,7 @@ footer {
           min-height: 8rem;
           display: flex;
           align-items: center;
+          justify-content: center;
         }
       }
     }
@@ -551,6 +590,11 @@ footer {
 
     .contact {
       border: none;
+
+      input[type="checkbox"] {
+        width: 2rem;
+        height: 2rem;
+      }
     }
 
     .location {
@@ -592,6 +636,7 @@ footer {
       .card {
         width: 33.3%;
         max-width: 35rem;
+
         img {
           height: 20rem;
         }
@@ -600,6 +645,18 @@ footer {
 
     .about-section {
       margin-bottom: 2rem;
+      font-size: 2.5rem;
+      line-height: 4rem;
+
+      h2 {
+        font-size: 5rem;
+        margin-bottom: 5rem;
+      }
+
+      p {
+        max-width: 150rem;
+        margin: 0 auto 2rem auto;
+      }
     }
 
     .partners {
@@ -607,8 +664,7 @@ footer {
       margin: 0 auto 5rem auto;
       padding-bottom: 3rem;
       border-bottom: 1px solid $secondary;
-      width: 90%;
-      max-width: 125rem;
+      width: 85%;
 
       img {
         width: 17rem;
@@ -724,6 +780,34 @@ footer {
 
 @media screen and (min-width: 2000px) {
   main {
+    .hero-image {
+      .title {
+        height: 25rem;
+      }
+
+      h1 {
+        max-width: 60rem;
+        font-size: 4.5rem;
+        margin-bottom: 3rem;
+      }
+
+      small {
+        font-size: 2rem;
+      }
+
+      .contact-us {
+        max-width: 60rem;
+        height: 7.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          font-size: 2rem;
+        }
+      }
+    }
+
     .gallery {
       width: 100%;
       max-width: 270rem;

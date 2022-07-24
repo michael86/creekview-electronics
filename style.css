@@ -226,6 +226,15 @@ main .hero-image {
   position: relative;
   color: #fff;
   padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .hero-image video {
@@ -539,9 +548,44 @@ footer .smallprint {
     width: 90%;
     margin: auto;
   }
+  main {
+    margin-top: 16rem;
+  }
+  main .hero-image {
+    height: 55vh;
+  }
+  main .hero-image .hero-container {
+    width: 65%;
+  }
+  main .hero-image .title {
+    width: 100%;
+    max-width: 81rem;
+    height: 10rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .hero-image h1 {
+    font-size: 2.5rem;
+  }
+  main .hero-image small {
+    font-size: 1.2rem;
+  }
+  main .hero-image .contact-us {
+    max-width: 31rem;
+  }
   main .gallery {
     width: 100%;
     padding: 2rem;
+  }
+  main .gallery .card {
+    margin-right: 1rem;
   }
   main .card-container {
     display: -webkit-box;
@@ -570,12 +614,19 @@ footer .smallprint {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   main .about-section {
     margin-top: 1rem;
   }
   main .contact {
     border: none;
+  }
+  main .contact input[type="checkbox"] {
+    width: 2rem;
+    height: 2rem;
   }
   main .location iframe {
     height: 60rem;
@@ -612,14 +663,23 @@ footer .smallprint {
   }
   main .about-section {
     margin-bottom: 2rem;
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+  main .about-section h2 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+  }
+  main .about-section p {
+    max-width: 150rem;
+    margin: 0 auto 2rem auto;
   }
   main .partners {
     display: block;
     margin: 0 auto 5rem auto;
     padding-bottom: 3rem;
     border-bottom: 1px solid #2c2e2d;
-    width: 90%;
-    max-width: 125rem;
+    width: 85%;
   }
   main .partners img {
     width: 17rem;
@@ -732,6 +792,33 @@ footer .smallprint {
 }
 
 @media screen and (min-width: 2000px) {
+  main .hero-image .title {
+    height: 25rem;
+  }
+  main .hero-image h1 {
+    max-width: 60rem;
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+  }
+  main .hero-image small {
+    font-size: 2rem;
+  }
+  main .hero-image .contact-us {
+    max-width: 60rem;
+    height: 7.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .hero-image .contact-us a {
+    font-size: 2rem;
+  }
   main .gallery {
     width: 100%;
     max-width: 270rem;
